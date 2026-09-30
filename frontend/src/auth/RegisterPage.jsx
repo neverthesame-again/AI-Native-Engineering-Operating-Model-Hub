@@ -76,7 +76,7 @@ function MultiSelectDropdown({ label, options, selectedValues, onChange, placeho
 // ── Feature cards (shorter text for register panel)
 const FEATURES = [
   { icon: '🛡️', cls: 'icon-infra', text: <><strong>Engineering Leader:</strong> Enterprise AI Governance, Architecture Standards &amp; Cross-Portfolio Model Strategy</> },
-  { icon: '🔧', cls: 'icon-ams',   text: <><strong>AI for AMS:</strong> Incident &amp; problem desks for Support Engineer &amp; Software Engineer</> },
+  { icon: '🔧', cls: 'icon-ams',   text: <><strong>AI for AMS:</strong> Command centre for the Head of AMS — SLA oversight, incident RCA, agent governance &amp; FinOps control.</> },
   { icon: '💻', cls: 'icon-ad',    text: <><strong>AI for AD:</strong> Workspaces for Product Owner &amp; Developer</> }
 ];
 
@@ -327,7 +327,7 @@ export default function RegisterPage({ onNavigateToLogin }) {
             </div>
           )}
 
-          <form className="auth-form" onSubmit={handleSubmit}>
+          <form className="auth-form" onSubmit={handleSubmit} autoComplete="off">
 
             {/* Full Name */}
             <div className="auth-field-group">
@@ -353,7 +353,7 @@ export default function RegisterPage({ onNavigateToLogin }) {
                 placeholder="your.name@tcs.com"
                 value={email}
                 onChange={(e) => { setEmail(e.target.value); setErrorMsg(''); }}
-                autoComplete="email"
+                autoComplete="off"
                 required
               />
               {emailInvalid && (

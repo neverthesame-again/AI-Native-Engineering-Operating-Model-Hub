@@ -21,7 +21,7 @@ const FEATURES = [
   {
     icon: '🔧',
     cls: 'icon-ams',
-    text: <><strong>AI for AMS:</strong> Specialized desks for Support Engineer &amp; Software Engineer — powering ticket triage, RCA diagnostics, PRD generator &amp; SLA watch.</>,
+    text: <><strong>AI for AMS:</strong> Command centre for the Head of AMS — real-time SLA oversight, incident RCA, agent governance &amp; FinOps control.</>,
   },
   {
     icon: '💻',
@@ -306,7 +306,7 @@ export default function LoginPage({ onNavigateToRegister }) {
               </div>
             )}
 
-            <form className="auth-form" onSubmit={handleSubmit}>
+            <form className="auth-form" onSubmit={handleSubmit} autoComplete="off">
               {/* Email */}
               <div className="auth-field-group">
                 <label className="auth-label" htmlFor="login-email">Email Address</label>
@@ -317,7 +317,7 @@ export default function LoginPage({ onNavigateToRegister }) {
                   placeholder="your.name@tcs.com"
                   value={email}
                   onChange={(e) => { setEmail(e.target.value); setErrorMsg(''); }}
-                  autoComplete="email"
+                  autoComplete="off"
                   required
                 />
                 {emailInvalid && (
@@ -338,7 +338,7 @@ export default function LoginPage({ onNavigateToRegister }) {
                     placeholder="Enter your password"
                     value={password}
                     onChange={(e) => { setPassword(e.target.value); setErrorMsg(''); }}
-                    autoComplete="current-password"
+                    autoComplete="new-password"
                     required
                   />
                   <button
