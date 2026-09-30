@@ -21,7 +21,7 @@ const FEATURES = [
   {
     icon: '🔧',
     cls: 'icon-ams',
-    text: <><strong>AI for AMS:</strong> Command centre for the Head of AMS — real-time SLA oversight, incident RCA, agent governance &amp; FinOps control.</>,
+    text: <><strong>AI for AMS:</strong> Workspace for Head of AMS featuring SLA oversight, incident RCA &amp; agent governance.</>,
   },
   {
     icon: '💻',

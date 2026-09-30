@@ -76,7 +76,7 @@ function MultiSelectDropdown({ label, options, selectedValues, onChange, placeho
 // ── Feature cards (shorter text for register panel)
 const FEATURES = [
   { icon: '🛡️', cls: 'icon-infra', text: <><strong>Engineering Leader:</strong> Enterprise AI Governance, Architecture Standards &amp; Cross-Portfolio Model Strategy</> },
-  { icon: '🔧', cls: 'icon-ams',   text: <><strong>AI for AMS:</strong> Command centre for the Head of AMS — SLA oversight, incident RCA, agent governance &amp; FinOps control.</> },
+  { icon: '🔧', cls: 'icon-ams',   text: <><strong>AI for AMS:</strong> Workspace for Head of AMS featuring SLA oversight, incident RCA &amp; agent governance.</> },
   { icon: '💻', cls: 'icon-ad',    text: <><strong>AI for AD:</strong> Workspaces for Product Owner &amp; Developer</> }
 ];
 
